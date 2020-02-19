@@ -52,12 +52,10 @@
       <option value="itarsi, mp">Itarsi</option>
       <option value="guna, mp">Guna</option>
       <option value="gwalior, mp">Gwalior</option>
-      <option value="mumbai, mh">Mumbai</option>
-      <option value="new york, ny">New York</option>
     </select>
         <b>End: </b>
         <select id="end">
-      <option value="bhopal, mp">Bhopal</option>
+        <option value="bhopal, mp">Bhopal</option>
       <option value="sehore, mp">Sehore</option>
       <option value="indore, mp">Indore</option>
       <option value="hoshangabad, mp">Hoshangabad</option>
@@ -68,7 +66,6 @@
       <option value="itarsi, mp">Itarsi</option>
       <option value="guna, mp">Guna</option>
       <option value="gwalior, mp">Gwalior</option>
-      <option value="mumbai, mh">Mumbai</option>
     </select>
     </div>
     <div id="map"></div>
@@ -96,7 +93,7 @@
             directionsService.route({
                 origin: document.getElementById('start').value,
                 destination: document.getElementById('end').value,
-                travelMode: 'FLIGHTS'
+                travelMode: 'WALKING'
             }, function(response, status) {
                 if (status === 'OK') {
                     directionsDisplay.setDirections(response);
@@ -108,11 +105,6 @@
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeUBmVp6XI7LCNyAehqDPqjQaF4VCKecQ&callback=initMap">
     </script>
-    <!--<script src="route_algorithm/astarpathfinder.js"></script>
-    <script src="route_algorithm/sketch.js"></script>
-    <script src="route_algorithm/spot.js"></script>
-    <script src="route_algorithm/libraries/p5.js"></script>
-    <script src="route_algorithm/libraries/p5.dom.js"></script>"-->
 </body>
 
 </html>
